@@ -1,0 +1,20 @@
+# Minimal Select
+
+## Usage
+
+| Prop | Description |
+| ---|--- |
+| onSelect | the method that is fired onChange |
+| options | the data that will build the options |
+| valueProp | the value for each option |
+| displayProp | the text that will display in each option | 
+
+
+  ```
+  Select.propTypes = {
+    onSelect: PropTypes.func.isRequired,
+    options: PropTypes.arrayOf(PropTypes.object).isRequired,
+    valueProp: PropTypes.string.isRequired,
+    displayProp: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+  ```
