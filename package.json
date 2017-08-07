@@ -1,6 +1,6 @@
 {
   "name": "minimal-select",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "description": "Simple Select UI component",
   "main": "build/index.js",
   "scripts": {
@@ -27,5 +27,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.5.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": ["react", "webpack", "js"],
+  "repository": "https://github.com/trevwaddell/minimal-select.git"
 }

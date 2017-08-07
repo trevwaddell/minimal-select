@@ -1,7 +1,8 @@
+
+
 # Minimal Select
 
-
-
+Minimal Select is a small, reusable select component for react.
 
 
 ## Installation
@@ -15,7 +16,6 @@
 ```
 import Select from 'minimal-select' // ES6
 ```
-
 
 
 | Prop | Description |
@@ -33,4 +33,4 @@ Select.propTypes = {
   valueProp: PropTypes.string.isRequired,
   displayProp: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-  ```
+```
