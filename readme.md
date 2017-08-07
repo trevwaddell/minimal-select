@@ -1,6 +1,22 @@
 # Minimal Select
 
+
+
+
+
+## Installation
+
+
+` $ npm install minimal-select`
+
+
 ## Usage
+
+```
+import Select from 'minimal-select' // ES6
+```
+
+
 
 | Prop | Description |
 | ---|--- |
@@ -10,11 +26,11 @@
 | displayProp | the text that will display in each option | 
 
 
-  ```
-  Select.propTypes = {
-    onSelect: PropTypes.func.isRequired,
-    options: PropTypes.arrayOf(PropTypes.object).isRequired,
-    valueProp: PropTypes.string.isRequired,
-    displayProp: PropTypes.arrayOf(PropTypes.string).isRequired,
+```
+Select.propTypes = {
+  onSelect: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.object).isRequired,
+  valueProp: PropTypes.string.isRequired,
+  displayProp: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
   ```
