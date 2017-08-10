@@ -1,6 +1,6 @@
 {
   "name": "minimal-select",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Simple Select UI component",
   "main": "build/index.js",
   "scripts": {
@@ -32,10 +32,6 @@
     "react-test-renderer": "^15.6.1"
   },
   "license": "ISC",
-  "keywords": [
-    "react",
-    "webpack",
-    "js"
-  ],
+  "keywords": ["react", "webpack", "js"],
   "repository": "https://github.com/trevwaddell/minimal-select.git"
 }
