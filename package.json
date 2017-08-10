@@ -5,8 +5,8 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "start": "webpack --watch",
-    "build": "webpack"
+    "start": "webpack -p --watch",
+    "build": "webpack -p"
   },
   "peerDependencies": {
     "react": "^15.5.4"
