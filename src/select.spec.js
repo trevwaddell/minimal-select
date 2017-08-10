@@ -3,7 +3,7 @@ import { mount, render } from "enzyme";
 import renderer from "react-test-renderer";
 import ReactTestUtils from "react-dom/test-utils";
 
-import Select from "./select";
+import Select from "./index";
 
 describe("<Select />", () => {
   let data;

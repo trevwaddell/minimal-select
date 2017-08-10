@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> should render correctly 1`] = `
+<div
+  className=""
+>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value="001"
+    >
+      Drogon
+    </option>
+    <option
+      value="002"
+    >
+      Rhaegal
+    </option>
+    <option
+      value="003"
+    >
+      Viserion
+    </option>
+  </select>
+</div>
+`;

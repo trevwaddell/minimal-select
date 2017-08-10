@@ -1,26 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 // Select Component
 const Select = ({ options, ...props }) => {
-  const handleSelect = (event) => {
+  const handleSelect = event => {
     props.onSelect(event.target.value);
   };
 
   const createDisplayText = option =>
     props.displayProp.reduce(
-      (displayValue, prop) => (displayValue ? `${displayValue} ${option[prop]}` : option[prop]),
-      '',
+      (displayValue, prop) =>
+        displayValue ? `${displayValue} ${option[prop]}` : option[prop],
+      ""
     );
 
   const optionElems = options.map(option =>
-    (<option value={option[props.valueProp]} key={option[props.valueProp]}>
+    <option value={option[props.valueProp]} key={option[props.valueProp]}>
       {createDisplayText(option)}
-    </option>),
+    </option>
   );
 
   return (
-    <div className="select">
+    <div className={props.className}>
       <select onChange={handleSelect}>
         {optionElems}
       </select>
@@ -29,11 +30,15 @@ const Select = ({ options, ...props }) => {
 };
 
 // Select Component Prop Types
+Select.defaultProps = {
+  className: ""
+};
 Select.propTypes = {
   onSelect: PropTypes.func.isRequired,
+  className: PropTypes.string,
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
   valueProp: PropTypes.string.isRequired,
-  displayProp: PropTypes.arrayOf(PropTypes.string).isRequired,
+  displayProp: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Select;
