@@ -1,6 +1,6 @@
 {
   "name": "minimal-select",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Simple Select UI component",
   "main": "build/index.js",
   "scripts": {
